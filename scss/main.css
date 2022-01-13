@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --easy-dark-grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --vary-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --font-size: 24px;
+}
+
+.container {
+  background: var(--light-grayish-cyan);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.container header {
+  margin: 2em 0 2em 0;
+}
+
+.container main {
+  background: var(--white);
+  border-radius: 25px;
+  width: 100%;
+  padding: 2em 1.5em;
+  max-width: 375px;
+}
+
+.container main section .inner_container {
+  position: relative;
+}
+
+.container main section .inner_container img {
+  position: absolute;
+  top: 42px;
+  left: 15px;
+}
+
+.container main section .inner_container h4 {
+  color: var(--dark-grayish-cyan);
+}
+
+.container main section .inner_container input {
+  width: 100%;
+  padding-left: 0.4em;
+  font-size: var(--font-size);
+  background: var(--light-grayish-cyan);
+  border: none;
+  border-radius: 5px;
+  margin: 0.1em 0 1em 0;
+  outline-color: var(--strong-cyan);
+  height: 45px;
+  text-align: right;
+}
+
+.container main section .inner_container .btns_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.1em 0 1em 0;
+}
+
+.container main section .inner_container .btns_container input {
+  width: 48%;
+  height: 45px;
+  margin: 0.3em 0;
+  text-align: center;
+  color: var(--very-dark-cyan);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.container main section .inner_container .btns_container button {
+  font-weight: 700;
+  width: 48%;
+  height: 45px;
+  margin: 0.3em 0;
+  color: var(--white);
+  background: var(--very-dark-cyan);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.container main section .inner_container .btns_container button:hover {
+  background: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.container main .secTwo {
+  background: var(--very-dark-cyan);
+  border-radius: 15px;
+  padding: 2em 1.5em;
+}
+
+.container main .secTwo .inner_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container main .secTwo .inner_container h4 {
+  color: var(--white);
+  margin-top: 1em;
+}
+
+.container main .secTwo .inner_container span {
+  color: var(--strong-cyan);
+  margin-bottom: 1.5em;
+}
+
+.container main .secTwo .inner_container div {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 40px;
+  color: var(--strong-cyan);
+}
+
+.container main .secTwo .inner_container button {
+  background: var(--strong-cyan);
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 0.4em;
+  border: none;
+  color: var(--very-dark-cyan);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container main .secTwo .inner_container button:hover {
+  background: var(--light-grayish-cyan);
+}
+
+.container footer {
+  margin: 2em 0 0.5em 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 100vh;
+  }
+  .container main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1040px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container main section {
+    width: 45%;
+    margin: 1em 0;
+  }
+  .container main .secTwo .inner_container button {
+    margin-top: 100px;
+  }
+  .container main .secTwo .inner_container div {
+    font-size: 50px;
+  }
+  .container footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
