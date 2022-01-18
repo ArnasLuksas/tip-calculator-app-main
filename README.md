@@ -1,10 +1,17 @@
 # Frontend Mentor - Tip calculator app
 
+<h1><a href="https://nifty-bassi-01dc90.netlify.app/">Live site</a></h1>
+
+
 ## Technologies
 
 - HTML
 - SCSS + media queries
 - JavaScript
+
+ <img src="https://raw.githubusercontent.com/ArnasLuksas/tip-calculator-app-main/main/images/tipPc.png" alt="tip calculator" > 
+ <img src="https://raw.githubusercontent.com/ArnasLuksas/tip-calculator-app-main/main/images/tipMob.png" alt="tip calculator" > 
+
 
 ## The challenge
 
