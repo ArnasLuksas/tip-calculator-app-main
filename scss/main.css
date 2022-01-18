@@ -14,6 +14,7 @@
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --vary-light-grayish-cyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+  --red: red;
   --font-size: 24px;
 }
 
@@ -72,6 +73,7 @@
   outline-color: var(--strong-cyan);
   height: 45px;
   text-align: right;
+  padding: 0px 20px;
 }
 
 .container main section .inner_container .btns_container {
@@ -112,6 +114,37 @@
 .container main section .inner_container .btns_container button:hover {
   background: var(--strong-cyan);
   color: var(--very-dark-cyan);
+}
+
+.container main section .inner_container .btns_container button:focus {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.container main section .inner_container .customNumber {
+  width: 48%;
+  font-weight: 700;
+  text-align: center;
+  color: var(--very-dark-cyan);
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 149px;
+}
+
+.container main section .inner_container .error {
+  border: 2px solid red;
+  outline-color: var(--red);
+}
+
+.container main section .inner_container .billError,
+.container main section .inner_container .fillError {
+  color: red;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  font-size: 12px;
 }
 
 .container main .secTwo {
@@ -159,6 +192,10 @@
   color: var(--very-dark-cyan);
   font-weight: 700;
   cursor: pointer;
+}
+
+.container main .secTwo .inner_container .enableBtn {
+  opacity: 0.2;
 }
 
 .container main .secTwo .inner_container button:hover {
